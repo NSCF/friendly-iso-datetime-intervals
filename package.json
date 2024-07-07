@@ -1,0 +1,26 @@
+{
+  "name": "friendly-iso-datetime-intervals",
+  "version": "0.1.0",
+  "description": "A function for returning ISO8601 date/time intervals or ranges, such as 2008-02-15/03-14",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NSCF/friendly-iso-datetime-intervals.git"
+  },
+  "keywords": [
+    "date",
+    "time",
+    "interval",
+    "ISO8601"
+  ],
+  "author": "Ian Engelbrecht",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NSCF/friendly-iso-datetime-intervals/issues"
+  },
+  "homepage": "https://github.com/NSCF/friendly-iso-datetime-intervals#readme"
+}
