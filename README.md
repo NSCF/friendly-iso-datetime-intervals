@@ -13,10 +13,16 @@ It doesn't seem like commonly used datetime libraries such as [date-fns](https:/
 
 import getISODateRange from 'friendly-iso-datetime-intervals'
 
-getISODateRange('2024-02-05', '2024-04-08') // -> 2024-02-05/04-08
+try {
+  getISODateRange('2024-02-05', '2024-04-08') // -> 2024-02-05/04-08
+}
+catch(err) {
+  // throws if formats are inconsistent, values missing, etc
+  // handle errors here
+}
 ```
 
-Note that formats of startDate and endDate are compared and must be the consistent. 
+Note that formats of startDate and endDate are compared and must be the consistent. A startDate is also required, otherwise it throws, so test first if you have a value before using the function.
 
 `getISODateRange` can also take start time and end time values, e.g. '12.15' or '12:15'. Again these must be consistent.
 
