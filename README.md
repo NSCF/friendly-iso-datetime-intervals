@@ -22,7 +22,19 @@ catch(err) {
 }
 ```
 
-Note that formats of startDate and endDate are compared and must be the consistent. A startDate is also required, otherwise it throws, so test first if you have a value before using the function.
+or
+```
+try {
+  getISODateRange('2024', '2025', null, null, true) // -> 2024-2025
+}
+catch(err) {
+  // throws if formats are inconsistent, values missing, etc
+  // handle errors here
+}
+```
+So date ranges can be formed from a range of different, partial date formats in a dataset.
+
+Note that formats of startDate and endDate are compared and must be the consistent. A startDate is also required, otherwise the function throws, so test first if you have a value before using the function.
 
 `getISODateRange` can also take start time and end time values, e.g. '12.15' or '12:15'. Again these must be consistent.
 
