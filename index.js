@@ -2,8 +2,8 @@ import { romanNumeralMonths } from "./romanNumeralMonths.js"
 
 /**
  * Function to generate ISO8601 date/time ranges from start and end dates/times. Note this will throw for empty strings as input.
- * @param {string} startDate A partial or full date string, e.g. '2024-07-19', or '2024-07'; can be a full UTC ISO date string; backslashes also acceptable as separators
- * @param {string} [endDate] A partial or full date string, must be equal or after startDate
+ * @param {string} startDate A partial or full ISO date string, e.g. '2024-07-19', or '2024-07'; backslashes also acceptable as separators
+ * @param {string} [endDate] A partial or full ISO date string, must be equal or after startDate
  * @param {string} [startTime] A time string, as hrs:minutes[:seconds]; periods also acceptable as separators
  * @param {string} [endTime] The end time, same format as startTime; endDate is required
  * @param {boolean} [useSlashesNotDashes] A flag for whether to swap dashes and slashes, which means the result is no longer a valid ISO string, but is more user friendly IMO
